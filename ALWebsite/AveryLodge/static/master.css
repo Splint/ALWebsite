@@ -54,14 +54,93 @@ html, body {
 }
 .content {
     margin-top:30px;
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:20%;
+    margin-right:20%;
+}
+.content h1{
+    text-align:center;
+}
+#DocumentContainer ul{
+    padding:0;
+    text-align:center;
+    margin-left:31%;
+    margin-right:31%;
+    background-color:black;
+    color:white
+    float:left;
+    width:100%;
+    font-family:arial,helvetica, sans-serif;
+}
+#DocumentContainer ul li {
+    display:inline;
+}
+#DocumentContainer ul li a {
+    padding:1.2em 1.2em;
+    margin:20px;
+    background-color:black;
+    font-weight:bold;
+    color:white;
+    text-decoration:none;
+    float:left;
+    border-radius:12px;
+    -moz-border-radius:12px;
+    border:2px solid black;
+}
+#DocumentContainer ul li a:hover {
+    background-color:#6F6F6F;
+    border:2px solid #6F6F6F;
+    border-radius:12px;
+    -moz-border-radius:12px;
+}
+#DocumentContainer a:visited#cur_doc {
+    background-color:#6F6F6F;
+    border:2px solid #6F6F6F;
+    border-radius:12px;
+    -moz-border-radius:12px;
+}
+.table_container {
+    margin-left:12%;
+    margin-right:12%;
+}
+#avery_table {
+    width:100%;
+}
+#avery_table tbody {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+#avery_table thead{
+    text-align:left;
+}
+#avery_table thead th {
+    background:-moz-linear-gradient(top,#F0F0F0 0, #DBDBDB 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0F0F0), color-stop(100%, #DBDBDB));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#DBDBDB', GradientType=0);
+    border:1px solid #B0B0B0;
+    color:#444;
+    font-size:16px;
+    font-weight:bold;
+    padding:3px 10px;
+}
+#avery_table td {
+    padding:3px 10px;
+}
+#avery_table tr:nth-child(even) {
+    background:#B95555;
 }
 .footer p {
     height:2em;
     text-align:center;
     font-size:x-small;
     font-weight:bold;
+    border-top:1px solid red;
+    margin-left:20%;
+    margin-right:20%;
 }
 .push {
     height:4em;

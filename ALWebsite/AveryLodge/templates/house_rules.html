@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %} Avery Lodge - Documents{% endblock %}
+{% block title %} Avery Lodge - House Rules{% endblock %}
 {% block acti_index %}inactive{% endblock %}
 {% block cur_index %}noncurrent{% endblock %}
 {% block acti_cal %}inactive{% endblock %}
@@ -16,7 +16,7 @@
 <div id="DocumentContainer">
     <ul id="DocumentList">
         <li><a href="{{ url_for('constitution') }}" id="noncurrent">Constitution</a></li>
-        <li><a href="{{ url_for('house_rules') }}" id="noncurrent">House Rules</a></li>
+        <li><a href="{{ url_for('house_rules') }}" id="cur_doc">House Rules</a></li>
         <li><a href="{{ url_for('work_job_desc') }}" id="noncurrent">Work Job</a></li>
     </ul>
 </div>

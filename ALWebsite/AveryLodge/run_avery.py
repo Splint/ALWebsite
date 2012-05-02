@@ -59,6 +59,18 @@ def calendar():
 def documents():
     return render_template('documents.html')
 
+@app.route('/documents/constitution')
+def constitution():
+    return render_template('constitution.html')
+
+@app.route('/documents/house_rules')
+def house_rules():
+    return render_template('house_rules.html')
+
+@app.route('/documents/work_job_desc')
+def work_job_desc():
+    return render_template('work_job_desc.html')
+
 @app.route('/executive')
 def executive():
     return render_template('executive.html')
