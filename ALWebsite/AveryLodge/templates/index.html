@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %} Avery Lodge Cooperative House{% endblock %}
+{% block acti_index %}active{% endblock %}
+{% block cur_index %}current{% endblock %}
+{% block acti_cal %}inactive{% endblock %}
+{% block cur_cal %}noncurrent{% endblock %}
+{% block acti_docs %}inactive{% endblock %}
+{% block cur_docs %}noncurrent{% endblock %}
+{% block acti_exec %}inactive{% endblock %}
+{% block cur_exec %}noncurrent{% endblock %}
+{% block acti_mem %}inactive{% endblock %}
+{% block cur_mem %}noncurrent{% endblock %}
+{% block acti_alb %}inactive{% endblock %}
+{% block cur_alb %}noncurrent{% endblock %}
+{% block body %}
+ <div id="MainPicture">
+    <p class="centerimage"><img src="{{ url_for('static', filename='media/main/avery_lodge_main.jpg') }}" /></p>
+</div>
+<div class="content">
+    <p>Avery lodge houses 55 men, and is located on the east side of campus. The cooperatives are democratically managed by student membership. Each house has a trained Cooperative Director, who lives in the house and helps advise the executive board. Two to three students are typically assigned to a study room with a desk, closet and space for personal belongings. Shared sleeping rooms (called sleeping porches) with bunk beds are separate from the study rooms.<p>
+</div>
+{% endblock %}

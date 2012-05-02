@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<title>{% block title %} {% endblock %}</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='master.css') }}">
+<div id=body>
+    <div id=HeaderContainer>
+        <div id="NavContainer">
+            <ul id="NavList">
+                <li id="{% block acti_index %}{% endblock %}"><a href="{{ url_for('index') }}" id="{% block cur_index %}{% endblock %}">Avery Lodge</a></li>
+                <li id="{% block acti_cal %}{% endblock %}"><a href="{{ url_for('calendar') }}" id="{% block cur_cal %}{% endblock %}">Calendar</a></li>
+                <li id="{% block acti_docs %}{% endblock %}"><a href="{{ url_for('documents') }}" id="{% block cur_docs %}{% endblock %}">Docs</a></li>
+                <li id="{% block acti_exec %}{% endblock %}"><a href="{{ url_for('executive') }}" id="{% block cur_exec %}{% endblock %}">Executive</a></li>
+                <li id="{% block acti_mem %}{% endblock %}"><a href="{{ url_for('members') }}" id="{% block cur_mem %}{% endblock %}">Members</a></li>
+                <li id="{% block acti_alb %}{% endblock %}"><a href="{{ url_for('album') }}" id="{% block cur_alb %}{% endblock %}">Album</a></li>
+            </ul>
+        </div> 
+    </div>
+    {% block body %} {% endblock %}
+    <div class="push"></div>
+    <div class="footer">
+        <p>Copyright (c) Avery Lodge 2011-2012</p>
+    </div>
+</div>
